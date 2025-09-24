@@ -5,55 +5,110 @@
     <title>Zoo CIEL 2 - Accueil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* ... mêmes styles que toi ... */
+        /* Centrage complet de la page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #187322;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Centrage vertical */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #EB9942);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: #5B4B49;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        img {
+            border-radius: 8px;
+            margin: 10px;
+            width: 30%;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Bienvenue au Zoo des CIEL 2</h1>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="visite.html">Visite</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="acces.html">Accès</a>
+                <a href="contact.html">Contact</a>
+                <a href="activites.html">Activités</a>
+                <a href="fauves.html">Fauves</a>
+                <a href="photos.html">Photos</a>
+                <a href="manger.html">Restauration</a>
+            </nav>
+        </header>
 
-<header>
-    <h1>Bienvenue au Zoo des CIEL 2</h1>
-    <nav>
-        <a href="accueil.html">Accueil</a>
-        <a href="visite.html">Visite</a>
-        <a href="tarifs.html">Tarifs</a>
-        <a href="acces.html">Accès</a>
-        <a href="contact.html">Contact</a>
-        <a href="activites.html">Activités</a>
-        <a href="fauves.html">Fauves</a>
-        <a href="photos.html">Photos</a>
-        <a href="manger.html">Restauration</a>
-    </nav>
-</header>
+        <section>
+            <h2>Accueil</h2>
+            <p>Découvrez les animaux du monde que sont les CIEL 2 :</p>
+            <p>Ce sont des animaux très rares en voie de disparition seulement visibles en Corse.<br>
+               On les distingue grâce à leur quotient intellectuel inférieur à la moyenne.</p>
 
-<section>
-    <h1>Accueil</h1>
-    <h2>Découvrez les animaux du monde que sont les CIEL 2 :</h2>
-    <p>Ce sont des animaux très rares en voie de disparition seulement visibles en Corse.<br>
-       On les distingue grâce à leur quotient intellectuel inférieur à la moyenne.</p>
+            <h3>Vérifiez la météo avant de venir :</h3>
+            <p><small>Prévisions météo fournies par <a href="https://www.meteocity.com" target="_blank">Météocity</a></small></p>
 
-    <h3>Vérifiez la météo avant de venir :</h3>
-    <p><small>Prévisions météo fournies par <a href="https://www.meteocity.com" target="_blank">Météocity</a></small></p>
+            <!-- Widget météo -->
+            <center><div id="cont_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
+                <div id="spa_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
+                    <a id="a_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"
+                       href="https://www.meteocity.com/france/ajaccio-v3038334"
+                       target="_top"
+                       style="color:#ffd700;text-decoration:none;">Météo Ajaccio</a>
+                    © <a target="_top" href="https://www.meteocity.com" style="color:#ffd700;">Météocity</a>
+                </div>
+            </div>
+            <script type="text/javascript"
+                    src="https://www.meteocity.com/widget/js/MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"></center></script>
 
-    <!-- Widget météo -->
-    <div id="cont_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
-        <div id="spa_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
-            <a id="a_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"
-               href="https://www.meteocity.com/france/ajaccio-v3038334"
-               target="_top"
-               style="color:#333;text-decoration:none;">Météo Ajaccio</a>
-            © <a target="_top" href="https://www.meteocity.com">Météocity</a>
-        </div>
+            <!-- Images -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                <img src="Sans%20titre.jpg" alt="Giacoco">
+                <img src="Photo-Zoo-du-Bassin-D--arcacho.jpg" alt="CIEL2">
+                <img src="enzo.jpg" alt="Enzo">
+            </div>
+        </section>
     </div>
-    <script type="text/javascript"
-            src="https://www.meteocity.com/widget/js/MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"></script>
-
-    <!-- Images (à modifier comme ci-dessous) -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-        <img src="Sans%20titre.jpg" alt="Giacoco" style="width: 30%; border-radius: 8px;">
-        <img src="Photo-Zoo-du-Bassin-D--arcacho.jpg" alt="CIEL2" style="width: 30%; border-radius: 8px;">
-        <img src="enzo.jpg" alt="Enzo" style="width: 30%; border-radius: 8px;">
-    </div>
-</section>
-
 </body>
 </html>
