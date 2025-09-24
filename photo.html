@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Photos - Zoo CIEL 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #187322; 
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #EB9942); 
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #5B4B49; /* fond central modifié */
+            color: white; /* texte blanc */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #ffffff; /* titres en blanc pour contraste */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery figure {
+            text-align: center;
+            width: 200px;
+            margin: 0;
+        }
+
+        .gallery figcaption {
+            font-weight: bold;
+            margin-bottom: 8px;
+            background-color: #77635F; /* fond légende assorti */
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Photos - Zoo CIEL 2</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="visiter.html">Visiter</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="acces.html">Accès</a>
+        <a href="contact.html">Contact</a>
+        <a href="activites.html">Activités</a>
+        <a href="fauves.html">Fauves</a>
+        <a href="photos.html">Photos</a>
+        <a href="manger.html">Restauration</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Découvrez notre album photo (Spécial CIEL 2)</h2>
+    <p>Voici quelques clichés de nos animaux :</p>
+
+    <div class="gallery">
+        <figure>
+            <figcaption>Giacoco</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/elephant.jpg" alt="Giacoco" />
+        </figure>
+        <figure>
+            <figcaption>Enzo</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/mouton.jpg" alt="Enzo" />
+        </figure>
+        <figure>
+            <figcaption>HugoBoss</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/baston.jpg" alt="HugoBoss" />
+        </figure>
+        <figure>
+            <figcaption>Le Perret</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/lepeteur.avif" alt="Le Perret" />
+        </figure>
+        <figure>
+            <figcaption>Sergent chef</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/batailles.jpg" alt="Sergent chef" />
+        </figure>
+        <figure>
+            <figcaption>Popaul</figcaption>
+            <img src="file:///C:/Users/Fabrice/Pictures/popaul.jpg" alt="Popaul" />
+        </figure>
+    </div>
+</section>
+
+</body>
+</html>
