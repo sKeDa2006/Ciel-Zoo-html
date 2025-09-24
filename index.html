@@ -2,54 +2,160 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenue au Zoo</title>
+    <title>Zoo CIEL 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-	body {
+    <style>
+        body {
             font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #187322; 
+            margin: 0;
+            padding: 0;
         }
+
         header {
+            background: linear-gradient(to right, #007BFF, #EB9942); 
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 30px;
         }
+
+        nav {
+            margin: 20px 0;
+        }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center; /* Centrage du contenu */
+        }
+
+        h2 {
+            color: #2C3E50;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        img {
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        iframe {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 800px;
+            height: 400px;
+            border: none;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #094008;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Couleurs spécifiques par section */
+        #accueil { background-color: #5B4B49; }     
+        #visite { background-color: #5B4B49; }       
+        #tarifs { background-color: #5B4B49; }       
+        #acces { background-color: #5B4B49; }        
+        #contact { background-color: #5B4B49; }     
+        #activites { background-color: #5B4B49; }   
+        #fauves { background-color: #5B4B49; }      
+        #photos { background-color: #5B4B49; }       
+        #manger { background-color: #5B4B49 ; }       
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 5px;
+        }
+
+        a {
             color: #007BFF;
         }
-        .meteo {
-            margin-top: 30px;
-            text-align: center;
-        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur le site du Zoo CIEL 2</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="visiter.html">Visite</a>
-            <a href="tarifs.html">Tarifs</a>
-            <a href="acces.html">Accès</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <main><h3><center>
-        <p>Découvrez les animaux du monde que sont les CIEL 2 :</p><br></h3></center>
-		<p><h4><center>Ce sont des animaux très rare en voie de disparition seulement visible en corse.<br> On les distingues grace a leur quotien intelectuel inférieur à la moyenne</p></h4></center>
-		
-    </h3>
-        <div class="meteo">  
-			<p> Je vous invite à checker la météo avant de vous y rendre car leur état depend des chaleurs</p>
-            <p><small>Prévisions météo fournies par <a href="https://www.meteocity.com" target="_blank">meteocity</a></small></p>
-			<center><div id="cont_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
-    <div id="spa_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"><a id="a_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8" href="https://www.meteocity.com/france/ajaccio-v3038334?utm_medium=widget&utm_source=referral&utm_campaign=france-ajaccio-v3038334&utm_content=location" target="_top" style="color:#333;text-decoration:none;">Météo Ajaccio</a> ©<a target="_top" href="https://www.meteocity.com?utm_medium=widget&utm_campaign=france-ajaccio-v3038334&utm_content=homepage">Météocity</a></div>
-    <script type="text/javascript" src="https://www.meteocity.com/widget/js/MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"></script></center>
+<header>
+    <h1>Bienvenue au Zoo des CIEL 2</h1>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#visite">Visite</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#acces">Accès</a>
+        <a href="#contact">Contact</a>
+        <a href="#activites">Activités</a>
+        <a href="#fauves">Fauves</a>
+        <a href="#photos">Photos</a>
+        <a href="#manger">Restauration</a>
+    </nav>
+</header>
 
-        </div>
-    </main>
-</body>
-</html>
+<!-- ACCUEIL -->
+<section id="accueil">
+    <h1>Accueil</h1>
+    <h2><p>Découvrez les animaux du monde que sont les CIEL 2 :</p>
+    <p>Ce sont des animaux très rares en voie de disparition seulement visibles en Corse.<br>On les distingue grâce à leur quotient intellectuel inférieur à la moyenne.</p>
+    <div class="meteo">
+        <p>Vérifiez la météo avant de venir, leur état dépend des températures :</p></h2>
+        <p><small>Prévisions météo fournies par <a href="https://www.meteocity.com" target="_blank">Météocity</a></small></p>
+        <center><!-- Widget météo -->
+        <div id="cont_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
+            <div id="spa_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8">
+                <a id="a_MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"
+                   href="https://www.meteocity.com/france/ajaccio-v3038334"
+                   target="_top"
+                   style="color:#333;text-decoration:none;">Météo Ajaccio</a> ©<a target="_top"
+                   href="https://www.meteocity.com">Météocity</a>
+            </center></div>
+            <script type="text/javascript"
+                    src="https://www.meteocity.com/widget/js/MzAzODMzNHwxfDF8MXwzfCNmZmZmZmZ8M3wjZmZmZmZmfGd8"></script><br>
+					<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+    <img src="file:///C:/Users/Fabrice/Pictures/Sans%20titre.jpg" alt="Giacoco" style="width: 30%; border-radius: 8px;">
+    <img src="file:///C:/Users/Fabrice/Pictures/Photo-Zoo-du-Bassin-D--arcacho.jpg" alt="CIEL2" style="width: 30%; border-radius: 8px;">
+    <img src="file:///C:/Users/Fabrice/Pictures/enzo.jpg" alt="Enzo" style="width: 30%; border-radius: 8px;">
+</div> 
+</div>    
+</section>
