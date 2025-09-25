@@ -48,12 +48,12 @@
             border-bottom: 1px solid #ccc;
         }
 
-        /* Gallerie de fauves */
+        /* Galerie de fauves */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes flexibles */
             gap: 20px;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto 50px auto;
             padding: 20px;
         }
@@ -71,9 +71,10 @@
 
         img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: 300px; /* Plus grand */
+            object-fit: contain; /* Voir l’image en entier */
             border-radius: 8px;
+            background-color: white; /* Pour éviter un fond vert si l’image ne remplit pas la zone */
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
     </style>
@@ -134,4 +135,3 @@
 
 </body>
 </html>
-
