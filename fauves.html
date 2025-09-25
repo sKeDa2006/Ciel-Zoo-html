@@ -30,8 +30,8 @@
             padding: 40px 20px;
             max-width: 600px;
             margin: 30px auto;
-            background: #5B4B49; /* Fond sombre */
-            color: white; /* Texte blanc */
+            background: #5B4B49;
+            color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
@@ -47,9 +47,39 @@
             font-size: 1.2em;
             border-bottom: 1px solid #ccc;
         }
+
+        /* Gallerie de fauves */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+            padding: 20px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+
+        figcaption {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
+
 <header>
     <h1>Nos Fauves</h1>
     <nav>
@@ -67,36 +97,41 @@
 <section>
     <ul>
         <li>Le lion</li>
-        <li>le lynx</li>
-        <li>Le loup artique</li>
+        <li>Le lynx</li>
+        <li>Le loup arctique</li>
         <li>La panthère noire</li>
-        <li>Le jaguar </li>
+        <li>Le jaguar</li>
         <li>Le tigre</li>
     </ul>
 </section>
- <div class="gallery">
-        <figure>
-            <figcaption>Lion</figcaption>
-            <img src="lio.jpg" />
-        </figure>
-        <figure>
-            <figcaption>Jaguar</figcaption>
-            <img src="jaguar.jpg" />
-        </figure>
-        <figure>
-            <figcaption>Tigre</figcaption>
-            <img src="tigre.jpg" alt="HugoBoss" />
-        </figure>
-        <figure>
-            <figcaption>Phantère noire</figcaption>
-            <img src="panth%C3%A8re%20noir.jpg" />
-        </figure>
-        <figure>
-            <figcaption>Lynx</figcaption>
-            <img src="lynx.jpg" />
-        <figure>
-            <figcaption>Loup artique</figcaption>
-            <img src="loup%20artique.jpg" />
-        </figure>
+
+<div class="gallery">
+    <figure>
+        <figcaption>Lion</figcaption>
+        <img src="lio.jpg" alt="Lion" />
+    </figure>
+    <figure>
+        <figcaption>Jaguar</figcaption>
+        <img src="jaguar.jpg" alt="Jaguar" />
+    </figure>
+    <figure>
+        <figcaption>Tigre</figcaption>
+        <img src="tigre.jpg" alt="Tigre" />
+    </figure>
+    <figure>
+        <figcaption>Panthère noire</figcaption>
+        <img src="panth%C3%A8re%20noir.jpg" alt="Panthère noire" />
+    </figure>
+    <figure>
+        <figcaption>Lynx</figcaption>
+        <img src="lynx.jpg" alt="Lynx" />
+    </figure>
+    <figure>
+        <figcaption>Loup arctique</figcaption>
+        <img src="loup%20artique.jpg" alt="Loup arctique" />
+    </figure>
+</div>
+
 </body>
 </html>
+
