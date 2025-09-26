@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation - Zoo CIEL 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #187322;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #EB9942);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            background-color: #5B4B49;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            align-self: flex-start;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Réservez votre visite au Zoo CIEL 2</h1>
+            <nav>
+                <a href="accueil.html">Accueil</a>
+                <a href="visite.html">Visiter</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="acces.html">Accès</a>
+                <a href="contact.html">Contact</a>
+                <a href="activites.html">Activités</a>
+                <a href="fauves.html">Fauves</a>
+                <a href="photos.html">Photos</a>
+                <a href="manger.html">Restauration</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Formulaire de Réservation</h2>
+            <form action="traitement_reservation.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="personnes">Nombre de personnes :</label>
+                <input type="number" id="personnes" name="personnes" min="1" max="100" required>
+
+                <input type="submit" value="Réserver">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+
